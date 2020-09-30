@@ -1,0 +1,444 @@
+@media (max-width: 2560px) {
+  body {
+    max-width: 2560px;
+
+  }
+
+  .sectionBlock,
+  .sectionApp,
+  .sectionBlock-who {
+    width: 100%;
+    height: 100%;
+  }
+
+  .sectionBlock-who {
+    height: 100%;
+  }
+
+  .sectionBlock-signUp {
+    height: 100%;
+    padding-bottom: 2rem;
+  }
+
+  .titleBox h1 {
+    font-size: 8rem;
+  }
+
+  .titleBox .signupButton {
+    width: 16rem;
+    height: 6rem;
+    font-size: 2rem;
+  }
+
+  .navBar {
+    max-width: 100%;
+    justify-content: space-around;
+  }
+
+  .featuresList {
+    display: flex;
+    justify-content: center;
+    margin: 6rem auto 9rem;
+    text-align: center;
+    background-color: rgba(113, 173, 245, 0.68);
+    padding: .5rem;
+    width: 50%;
+    border-radius: 10px;
+  }
+
+  .featuresList ul {
+    margin: 1rem auto;
+  }
+
+  .featuresList ul li {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 1920px) {
+    .titleBox h1 {
+      font-size: 6rem;
+    }
+
+    .navBar {
+      justify-content: space-between;
+    }
+
+    .titleBox .signupButton {
+      width: 10rem;
+      height: 3rem;
+      font-size: 1rem
+    }
+
+    .featuresList {
+      display: flex;
+      justify-content: center;
+      margin: 0rem auto 3rem;
+      text-align: center;
+      background-color: rgba(113, 173, 245, 0.68);
+      padding: .5rem;
+      width: 50%;
+      border-radius: 10px;
+    }
+
+    .featuresList ul {
+      margin: 1rem auto;
+    }
+
+    .featuresList ul li {
+      font-size: 1rem;
+    }
+
+    @media (max-width: 1465px) {
+      .titleBox h1 {
+        font-size: 4rem;
+      }
+
+      @media (max-width: 772px) {
+        body {
+          /* margin: 0; */
+          overflow-x: hidden;
+          width: 100%;
+        }
+
+        .sectionTitle {
+          width: 70%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .sectionTitle h1 {
+          font-size: 3rem;
+          text-align: center;
+        }
+
+        .navBar {
+          justify-content: space-between;
+          position: fixed;
+        }
+
+        .navText {
+          font-size: 1.75rem;
+          display: none;
+        }
+
+        .navLogoMobile {
+          display: flex;
+          max-width: 60px;
+          max-height: 40px;
+          z-index: 1
+        }
+
+
+        ul.topNav li a.navLink {
+          display: none;
+        }
+
+        ul.topNav.responsive li.dropDownLink {
+          display: block;
+          position: fixed;
+          top: 0px;
+          right: 0px;
+          font-size: 1.5rem;
+        }
+
+        ul.topNav.responsive li.dropDownLink a .dropDownIcon {}
+
+        ul.topNav.responsive {
+          flex-direction: column;
+          text-align: right;
+          padding-right: 30px;
+          align-items: flex-end;
+          transition: .3s ease-in-out;
+        }
+
+        ul.topNav li.dropDownLink {
+          display: block;
+          position: absolute;
+          top: 20px;
+          right: 30px;
+          font-size: 1.5rem;
+          padding: 0 0;
+          margin: 0 0;
+        }
+
+        ul.topNav.responsive li a.navLink {
+          display: flex;
+          text-align: right;
+          line-height: 1.5;
+        }
+
+        ul.topNav.responsive li {
+          position: relative;
+          top: 50px;
+          padding: 0px;
+        }
+
+        .mobileMenu {
+          display: block;
+        }
+
+        .navButton {
+          display: none;
+        }
+
+        .navLogoDiv {}
+
+        /* ---- DISPLAY SCREEN ---- */
+        .leftSide {
+          margin: 2rem auto;
+          /* max-height: 60%; */
+        }
+
+        .titleBox {
+          display: block;
+          position: absolute;
+          margin: 2rem 0;
+          width: 90%;
+          z-index: 4;
+          margin-left: auto;
+          margin-right: auto;
+          left: 0;
+          right: 0;
+          text-align: center;
+        }
+
+        .titleBox h1 {
+          font-size: 3.5rem;
+        }
+
+        .signupButton {
+          display: block;
+          position: absolute;
+          /* margin: 6rem 0; */
+          width: 60%;
+          overflow: hidden;
+          z-index: 4;
+          margin-left: auto;
+          margin-right: auto;
+          left: 0;
+          right: 0;
+          text-align: center;
+        }
+
+        .centerImage {
+          position: relative;
+          margin: 0rem auto 0rem auto;
+        }
+
+        .mainImage {
+          max-width: 60%;
+          padding-top: 10rem;
+          margin: 12rem auto 3rem;
+          z-index: 1;
+        }
+
+        .sectionBlock {
+          height: 100%;
+          width: 100vw;
+          overflow: hidden;
+          z-index: 1;
+        }
+
+        .sectionApp {
+          height: 100%;
+        }
+
+        .featuresList ul {
+          margin: 0;
+        }
+
+        .downloadButtons {
+          display: block;
+          margin: auto 5.5rem;
+          justify-content: center;
+          align-content: center;
+        }
+
+        .downloadBtn {
+          padding: 1rem;
+        }
+
+        .desktopApp {
+          display: none;
+        }
+
+        .blurbBox {
+          max-width: 90%;
+          width: 90%;
+        }
+
+        /* --- CLIENTS ---- */
+        .sectionBlock-who {
+          height: 100%;
+          /* overflow: hidden; */
+          z-index: 1;
+        }
+
+        .sectionBox-Who {
+          height: 100%;
+          overflow-y: inherit;
+        }
+
+        .whoBlurb {
+          max-width: 75%;
+          text-align: center;
+          margin: 2rem auto;
+        }
+
+        .whoBlurb h4 {
+          font-size: 1.2rem;
+        }
+
+        .clientsLogoBox {
+          display: block;
+          margin-left: 4.7rem;
+          margin-top: 1rem;
+        }
+
+        .logosCenter {
+          display: block;
+          height: 100%;
+          align-items: center;
+        }
+
+        .clientsLogo {
+          margin: 0 auto;
+          padding: 0;
+        }
+
+        /* ---- SIGN UP ----- */
+        .signUpBox {
+          margin: 0 auto 3rem;
+        }
+
+        .infoSignUpBox {
+          margin: 0 auto;
+        }
+
+        .desktopSignUp {
+          display: none;
+          width: 60%;
+        }
+
+        .form-group {
+          display: block;
+        }
+
+        .mobileSignUp {}
+
+        .mobileSignUpButton {
+          display: block;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          margin-top: 2rem!important;
+        }
+
+        .infoSignUpDesktop {
+          display: none;
+        }
+
+        .infoSignUpMobile {
+          display: block;
+          margin: 4rem auto 0;
+        }
+
+        .infoEmailBox {
+          margin: 0 auto 2rem;
+          display: block;
+          padding-top: 2rem;
+          width: 70%;
+        }
+
+        .infoEmailBox button {
+          display: block;
+          margin: 1rem auto;
+        }
+
+        .signUpCall {
+          padding-top: 4rem;
+        }
+
+        .footer {
+          height: 100%;
+          display: none;
+        }
+
+        .footerLogo {
+          display: none;
+        }
+
+        .footerLogoBox {
+          margin: 0rem 0rem;
+          padding: 0rem 1rem 1rem 1rem;
+        }
+
+        .mobileFooter {
+          display: flex;
+          background: linear-gradient(200deg, rgba(13, 82, 167, 1) 8%, rgba(113, 173, 245, 1) 100%);
+          height: 100%;
+        }
+
+        .footerNavLink:hover {
+          color: white;
+        }
+
+        .mobileFooterNav {
+          margin: 2rem 0;
+          display: flex;
+          /* padding: 1rem; */
+          /* text-align: center; */
+        }
+
+        .mobileFooterNav li {
+          display: flex;
+          text-align: center;
+          padding: .5rem;
+        }
+
+        .mobileSocialBox {
+          max-width: 100%;
+          margin: 1.5rem 0
+          /* display: flex; */
+        }
+
+        .mobileSocialBox ul {
+          display: flex;
+          margin-right: 1rem;
+        }
+
+        .mobileSocialLink {
+          display: flex;
+          /* padding: .5rem; */
+        }
+
+        .mobileSocialBox ul li {
+          list-style: none;
+          /* display: flex; */
+          overflow: visible;
+          padding: 1rem 1.2rem;
+          /* margin-left: auto; */
+          /* margin-right: 1rem; */
+          align-items: center;
+        }
+
+        .mobileSocialPic {
+          max-width: 25px;
+          filter: invert(100);
+          padding: 0;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        @media (max-width: 615px) {
+          .titleBox h1 {
+            font-size: 3rem;
+          }
+
+          .mainImage {
+            margin: 8rem auto 2rem;
+          }
+        }
+      }
+    }
+  }
+}
