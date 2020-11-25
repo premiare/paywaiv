@@ -34,6 +34,10 @@ $(document).ready(function(){
     $(".hamburger-menu").click(function(){
       $(".burger-1, .burger-2, .burger-3").toggleClass("open");
       $(".topNav").toggleClass("responsive");
+      // $(".topNav.responsive").toggle("fast");
+      $(".navBar").toggleClass("navOpen");
+      $(".navText").toggle("fast");
+      $(".navLink").toggleClass("menuBlack");
     });
 });
 
@@ -41,6 +45,7 @@ $(document).ready(function(){
 
 // MENU CHANGES COLOR OVER DARK ELEMENTS
 $(document).ready(function(){
+  if ($(window).width() < 800) {
 	$(window).scroll(function(){
   	var light_pos = $('.mainImage').offset().top;
     var light_height = $('.mainImage').height();
@@ -61,4 +66,23 @@ $(document).ready(function(){
       $('.navLink').addClass('menuBlack');
     }
   })
+}
+});
+
+
+// scroll functions
+
+$(document).ready(function() {
+    var previousScroll = 20;
+$(window).scroll(function(e) {
+
+    // add/remove class to navbar when scrolling to hide/show
+    var scroll = $(window).scrollTop();
+    if (scroll >= previousScroll) {
+        $(".navBar").addClass("navBarHide");
+    } else if (scroll < previousScroll) {
+        $(".navBar").removeClass("navBarHide");
+    }
+    previousScroll = scroll;
+});
 });
