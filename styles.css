@@ -39,15 +39,36 @@ body {
   padding: 0 0;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.01);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(113, 173, 245);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(29, 122, 233);
+}
+
 /*  ---- NAV BAR -----  */
 .navBar {
-  /* background-color: rgba(130, 130, 130, 0.18); */
+  background-color: rgb(205, 219, 235);
   height: 70px;
   width: 100%;
   display: flex;
   position: fixed;
   justify-content: space-between;
   z-index: 1;
+  transition: top 0.5s ease;
+}
+
+.navBarHide {
+    top: -70px;
 }
 
 .rightNav {
@@ -477,6 +498,16 @@ label {
 
 .custom-select option {
   color: #495057;
+}
+
+.termsAndCon {
+  color: black;
+}
+
+.termsAndConHover {
+  text-decoration: underline;
+  color: black;
+  cursor: pointer;
 }
 
 /* ---- FOOOTER ---- */
