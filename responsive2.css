@@ -1,0 +1,393 @@
+@media all and (max-width: 320px) {
+  body {
+    /* margin: 0; */
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .sectionTitle {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sectionTitle h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .navBar {
+    justify-content: space-between;
+    position: fixed;
+    background-color: rgb(205, 219, 235);
+    z-index: 2;
+    -webkit-transition:0.4s;
+    -moz-transition:0.4s;
+    -ms-transition:0.4s;
+    -o-transition:0.4s;
+    transition:0.4s;
+  }
+
+  .navOpen {
+    height: 100vh;
+    z-index: 2;
+    background-color: rgb(205, 219, 235);
+    -webkit-transition: height 0.4s ease-in-out;
+    -moz-transition: height 0.4s ease-in-out;
+    -ms-transition: height 0.4s ease-in-out;
+    -o-transition: height 0.4s ease-in-out;
+    transition: height 0.4s ease-in-out;
+  }
+
+  .navText {
+    font-size: 1.75rem;
+    display: flex;
+  }
+
+  .navTextOpen {
+    position: fixed;
+  }
+
+  .navLogoMobile {
+    display: flex;
+    max-width: 60%;
+    /* max-height: 40px; */
+    z-index: 1
+  }
+
+
+  ul.topNav li a.navLink {
+    display: none;
+  }
+
+  ul.topNav.responsive {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    right: 1.5rem;
+    top: 4rem;
+    /* align-items: flex-end; */
+
+  }
+
+  ul.topNav.responsive li a.navLink {
+    display: flex;
+    text-align: right;
+    line-height: 1.5;
+    color: rgb(113, 173, 245);
+  }
+
+  ul.topNav.responsive li {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    color: rgb(205, 219, 235);
+    font-weight: 800;
+  }
+
+  .mobileMenu {
+    display: block;
+  }
+
+  .navButton {
+    display: none;
+  }
+
+  .navLogoDiv {}
+
+  .hamburger-menu {
+    position: absolute;
+    top: .2rem;
+    right: 0rem;
+    width: 40px;
+    height: 4px;
+    z-index: 100;
+  }
+
+  .burger-1,
+  .burger-2,
+  .burger-3
+   {
+    width: 40px;
+    height: 4px;
+    z-index: 100;
+  }
+
+  .burger-1.open,
+  .burger-2.open,
+  .burger-3.open {
+      width: 40px;
+      height: 4px;
+      left: 0rem;
+      z-index: 100;
+    }
+
+
+  /* ---- DISPLAY SCREEN ---- */
+  .leftSide {
+    margin: 2rem auto;
+    /* max-height: 60%; */
+  }
+
+  .titleBox {
+    display: block;
+    position: absolute;
+    margin: 2rem 0;
+    width: 90%;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .titleBox h1 {
+    font-size: 3.5rem;
+  }
+
+  .signupButton {
+    display: block;
+    position: absolute;
+    /* margin: 6rem 0; */
+    width: 60%;
+    overflow: hidden;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .centerImage {
+    position: relative;
+    margin: 0rem auto 0rem auto;
+  }
+
+  .mainImage {
+    max-width: 60%;
+    padding-top: 10rem;
+    margin: 12rem auto 3rem;
+    z-index: 1;
+  }
+
+  .sectionBlock {
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .sectionApp {
+    height: 100%;
+  }
+
+  .featuresList ul {
+    margin: 0;
+  }
+
+  .downloadButtons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .downloadButtons a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .downloadBtn {
+    padding: 1rem;
+  }
+
+  .desktopApp {
+    display: none;
+  }
+
+  .blurbBox {
+    max-width: 90%;
+    width: 90%;
+  }
+
+  /* --- CLIENTS ---- */
+  .sectionBlock-who {
+    height: 100%;
+    /* overflow: hidden; */
+    z-index: 1;
+  }
+
+  .sectionBox-Who {
+    height: 100%;
+    overflow-y: inherit;
+  }
+
+  .whoBlurb {
+    max-width: 75%;
+    text-align: center;
+    margin: 2rem auto;
+  }
+
+  .whoBlurb h4 {
+    font-size: 1.2rem;
+  }
+
+  .clientsLogoBox {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+  }
+
+  .logosCenter {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+  }
+
+  .clientsLogo {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  /* ---- SIGN UP ----- */
+  .signUpBox {
+    margin: 0 auto 0rem;
+  }
+
+  .sectionBlock-signUp {
+    height: 100rem;
+    min-height: 100%;
+    max-height: 100%;
+  }
+
+  .infoSignUpBox {
+    margin: 0 auto;
+  }
+
+  .desktopSignUp {
+    display: none;
+    width: 60%;
+  }
+
+  .form-group {
+    display: block;
+  }
+
+  .mobileSignUp {}
+
+  .mobileSignUpButton {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 2rem!important;
+  }
+
+  .infoSignUpDesktop {
+    display: none;
+  }
+
+  .infoSignUpMobile {
+    display: block;
+    margin: 4rem auto 0;
+  }
+
+  .infoEmailBox {
+    margin: 0 auto 2rem;
+    display: block;
+    padding-top: 0rem;
+    width: 70%;
+  }
+
+  .infoEmailBox button {
+    display: block;
+    margin: 1rem auto;
+  }
+
+  .signUpCall {
+    /* padding-top: 4rem; */
+    margin: 1rem auto;
+  }
+
+  .footer {
+    height: 100%;
+    display: none;
+  }
+
+  .footerLogo {
+    display: none;
+  }
+
+  .footerLogoBox {
+    margin: 0rem 0rem;
+    padding: 0rem 1rem 1rem 1rem;
+  }
+
+  .mobileFooter {
+    display: flex;
+    position: sticky;
+    bottom: 0;
+    background: linear-gradient(200deg, rgba(13, 82, 167, 1) 8%, rgba(113, 173, 245, 1) 100%);
+    height: 20%;
+  }
+
+  .footerNavLink:hover {
+    color: white;
+  }
+
+  .mobileFooterNav {
+    /* margin: 2rem 0; */
+    display: none;
+    /* padding: 1rem; */
+    /* text-align: center; */
+  }
+
+  .mobileCol {
+    width: 0%;
+    padding: 0;
+  }
+
+  .mobileFooterNav li {
+    display: flex;
+    text-align: center;
+    padding: .5rem;
+  }
+
+  .mobileSocialBox {
+    max-width: 100%;
+    width: 100%;
+    margin: 1.5rem 0
+    /* display: flex; */
+  }
+
+  .mobileSocialBox ul {
+    display: flex;
+    justify-content: space-around;
+    /* margin-right: 1rem; */
+  }
+
+  .mobileSocialLink {
+    display: flex;
+    /* padding: .5rem; */
+  }
+
+  .mobileSocialBox ul li {
+    list-style: none;
+    /* display: flex; */
+    overflow: visible;
+    padding: 1rem 1.2rem;
+    /* margin-left: auto; */
+    /* margin-right: 1rem; */
+    align-items: center;
+  }
+
+  .mobileSocialPic {
+    max-width: 25px;
+    filter: invert(100);
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
