@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   /* overflow-y: hidden; */
 }
 
@@ -389,7 +389,7 @@ body {
 }
 
 .clientsLogo {
-  max-width: 200px;
+  max-width: 12rem;
   padding: .5rem .5rem;
   align-items: center;
 }
