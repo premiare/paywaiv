@@ -41,6 +41,35 @@ $(document).ready(function(){
     });
 });
 
+
+
+// MENU CHANGES COLOR OVER DARK ELEMENTS
+$(document).ready(function(){
+  if ($(window).width() < 800) {
+	$(window).scroll(function(){
+  	var light_pos = $('.mainImage').offset().top;
+    var light_height = $('.mainImage').height();
+    var menu_pos = $('.topNav').offset().top;
+    var menu_height = $('.topNav').height();
+    var scroll = $(window).scrollTop();
+
+    // console.log('light',light_pos);
+    // console.log('menu',menu_pos);
+    // console.log('scroll',scroll);
+
+    if(menu_pos > light_pos && menu_pos < (light_pos + light_height)) {
+    	$('.navLink').addClass('menuWhite');
+      $('.navLink').removeClass('menuBlack');
+    }
+    else {
+    	$('.navLink').removeClass('menuWhite');
+      $('.navLink').addClass('menuBlack');
+    }
+  })
+}
+});
+
+
 // scroll functions
 
 $(document).ready(function() {
